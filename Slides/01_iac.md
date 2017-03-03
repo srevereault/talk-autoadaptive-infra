@@ -7,49 +7,60 @@
 
 ## Définition
 
-TODO
+<br/>
+<br/>
+
+<blockquote>Capacité à manipuler des infrastructures en utilisant des interfaces programmatiques.</blockquote>
+
+<br/>
+
+<p style="text-align: right">Sylvain Révéreault</p>
 
 
 
 ## Approches d'infra as code
 
-- Configuration management, orchestration de déploiement
-- Virtualisation, IaaS, Containers
-- Software defined \*
+![Infra as Code](ressources/infra_as_code.png)
 
 
 
 ## Configuration management
 
-- push/pull
-- centralisé / décentralisé
-- agent / agentless
-- notion de "desired state configuration"
-- notion d'idempotence
+![Configuration Management](ressources/configuration-management-tools.png)
 
 
 
 ## Orchestration
 
-- Orchestration de déploiement
-  - d'applications
-  - d'infrastructures
-ex. : Terraform
+![Orchestrateurs](ressources/orchestrateurs.png)
 
 
 
-## IaaS
+## Virtualisation, IaaS, CaaS
 
-Déploiement en quelques lignes de code :
- - de machines
- - de réseaux
- - de services d'infrastructure
+![API everywhere](ressources/apis-apis-everywhere.png)
+
+
+
+## Virtualisation, IaaS, CaaS
+
+```python
+import boto
+ec2 = boto.connect_ec2()
+key_pair = ec2.create_key_pair('ec2-sample-key')  # only needs to be done once
+key_pair.save('/Users/patrick/.ssh')
+reservation = ec2.run_instances(image_id='ami-bb709dd2', key_name='ec2-sample-key')
+
+# Wait a minute or two while it boots
+for r in ec2.get_all_instances():
+    if r.id == reservation.id:
+        break
+print r.instances[0].public_dns_name  # output: ec2-184-73-24-97.compute-1.amazonaws.com
+```
 
 
 
 ## Software defined *
-
-Au delà du bullshit : software defined networking
 
 ![SDN](ressources/SDN.jpg)
 
@@ -111,8 +122,3 @@ send "$enablepassword\r"
 ## Software defined networking
 
 ![ODL](ressources/opendaylight.jpg)
-
-
-
-
-<!-- .slide: class="page-demo" -->

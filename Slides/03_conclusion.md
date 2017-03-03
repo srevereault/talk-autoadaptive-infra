@@ -6,14 +6,10 @@
 
 ## Une réalité
 
-- Les briques sont là
-- Les acteurs du Cloud les utilisent massivement
-- Le besoin est réel
+![Do It !](ressources/justdoit.jpg)
 
 
 
 ## Enjeux
 
-- Complexification... ou pas
-- Transformation du métier Ops
-- Applications adaptées
+![12 factors](ressources/12factors.jpg)

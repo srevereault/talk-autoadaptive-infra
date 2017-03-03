@@ -4,20 +4,6 @@
 
 
 
-## Sommaire
-
-<!-- .slide: id="master-toc" class="toc" -->
-
-- Pourquoi s'adapter ?
-- Infra as code ? Cékoidon ?
-- A quoi s'adapter ?
-  - Pannes
-  - Charge
-  - Malveillance
-- Conclusion
-
-
-
 ## Pourquoi s'adapter ?
 
 ![parceque](ressources/parceque.jpg)
