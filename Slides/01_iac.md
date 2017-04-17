@@ -68,9 +68,7 @@ print r.instances[0].public_dns_name  # output: ec2-184-73-24-97.compute-1.amazo
 
 ## Software defined networking
 
-![Cisco](ressources/cisco.jpg)
-
-![Cisco CLI](ressources/cisco-cli.jpg)
+![Cisco CLI](ressources/cisco-cli-cata.jpg)
 
 
 

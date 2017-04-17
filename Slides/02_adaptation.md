@@ -32,6 +32,7 @@
 ## Aux pannes : testing
 
 ![Chaos Monkey](ressources/chaos-monkey.jpeg)
+[Chaos Engineering](http://principlesofchaos.org/)
 
 
 
@@ -57,35 +58,16 @@
 
 
 
-## Parenthèse : serverless
+## A la charge : autoscaling
 
-![ServerLess](ressources/serverless.png)
-
-
-
-## Parenthèse : serverless
-
-```java
-package example;
-
-import com.amazonaws.services.lambda.runtime.Context;
-import com.amazonaws.services.lambda.runtime.RequestHandler;
-
-public class Hello implements RequestHandler<String, String> {
-    @Override
-    public String handleRequest(String input, Context context) {
-    	String output = "Hello, " + input + "!";
-    	return output;
-    }
-}
-```
+![Zenscaler demo](ressources/zenscaler-demo.png)
 
 
 
-## Parenthèse : serverless
+## Petite parenthèse :
 
-![Serverless framework](ressources/serverless-framework.png)
-
+![Zenscaler QRCode](ressources/zenscaler-qrcode.png)
+[https://github.com/Zenika/zenscaler](https://github.com/Zenika/zenscaler)
 
 
 

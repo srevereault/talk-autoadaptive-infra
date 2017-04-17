@@ -1,6 +1,16 @@
-# Les infrastructures auto-adaptives
+# Les infrastructures auto-adaptives  
 
 <!-- .slide: class="page-title" -->
+
+
+
+## @srevereault
+
+- Sylvain Révéreault
+- Directeur Technique @Zenika Rennes
+- Consultant DevOps et Infrastructure as code
+
+![Tags SRE](ressources/sre-tags_v2.png)
 
 
 
