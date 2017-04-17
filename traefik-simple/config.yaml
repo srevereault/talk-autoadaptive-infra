@@ -1,0 +1,18 @@
+orchestrator:
+    engine: "docker"
+scalers:
+    whoami-compose:
+        type: "docker-compose-cmd"
+        project: "traefik-simple"
+        target: "whoami"
+        config: "docker-compose.yaml"
+        upper_count_limit: 6
+        lower_count_limit: 1
+rules:
+    whoami-cpu-scale:
+        target: "whoami"
+        probe: "swarm.cpu_average"
+        up: "> 2"
+        down: "< 1.5"
+        scaler: whoami-compose
+        refresh: 2s
